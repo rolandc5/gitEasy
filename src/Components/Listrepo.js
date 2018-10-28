@@ -43,6 +43,7 @@ export default class listRepo extends Component {
                 console.log(response);
             })
             .catch(err => {
+                this.setState({ error: err });
                 console.log(err)
             })
     }
